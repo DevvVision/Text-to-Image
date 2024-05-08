@@ -19,5 +19,5 @@ if(check==True):
     # You can access the image with PIL.Image for example
     import io
     from PIL import Image
-    image = Image.open(io.BytesIO(image_bytes))
+    image = (io.BytesIO(image_bytes))
     st.image(image)
