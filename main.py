@@ -1,13 +1,13 @@
-from dotenv import find_dotenv,load_dotenv
+#from dotenv import find_dotenv,load_dotenv
 import streamlit as st
 # from transformers import pipeline
 # Use a pipeline as a high-level helper
-load_dotenv(find_dotenv())
-from transformers import pipeline
-def imagetotext(url):
-    pipe = pipeline("image-to-text", model="Salesforce/blip-image-captioning-large")
-    text = pipe(url)
-    return text
+# load_dotenv(find_dotenv())
+# from transformers import pipeline
+# def imagetotext(url):
+#     pipe = pipeline("image-to-text", model="Salesforce/blip-image-captioning-large")
+#     text = pipe(url)
+#     return text
 # def texttoimage(txxt):
 #     pipeline = DiffusionPipeline.from_pretrained("stabilityai/stable-diffusion-xl-base-1.0")
 
