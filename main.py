@@ -22,3 +22,4 @@ if(check==True):
     from PIL import Image
     image = (io.BytesIO(image_bytes))
     st.image(image)
+    st.download_button(label="Download Image", data = image,file_name="AnimeImage")
