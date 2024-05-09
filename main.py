@@ -5,7 +5,7 @@ st.write("# Text to Image generator")
 import requests
 
 API_URL = "https://api-inference.huggingface.co/models/cagliostrolab/animagine-xl-3.1"
-headers = {"Authorization": f"Bearer {st.secrets["API_KEY"]}"}
+headers = {"Authorization": "Bearer "+ st.secrets["API_KEY"]}
 
 def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
