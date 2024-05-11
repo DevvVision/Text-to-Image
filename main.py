@@ -1,4 +1,5 @@
 import streamlit as st
+import io
 import os
 st.write("# **Anime**")
 st.write("# Text to Image generator")
